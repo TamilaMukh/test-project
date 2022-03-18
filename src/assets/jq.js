@@ -195,7 +195,7 @@ $(document).ready(function() {
     ];
     $.each(skillbox, function (index, value) {
         $('.skillbox').append("<div class='twain twainBox-" + index + "'>" + 
-        "<img>" + "<p class='tag tagdva'></p>" +
+        "<img>" + "<p class='tag'></p>" +
         "<div class='info'>" + "<div class='melkiytext-one'>" + "<a href='#' class='rubrica'></a>" + "</div>" + 
         "<div class='melkiytext-two'>" + "<small></small>" + "</div>" + "</div>" + 
         "<p class='heading'></p>" + "<p class='description'></p>" +
