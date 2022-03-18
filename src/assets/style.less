@@ -71,4 +71,52 @@
         }  
     }
 }
-
+.skillbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .twain {
+        width: 550px;
+        position: relative;
+        img {
+            width: 80%;
+        }
+        .tag {
+            position: absolute;
+            bottom: 480px;
+            left: 35px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            border: 1px solid rgb(54, 134, 255);
+            padding: 7px 20px 7px 20px;
+            border-radius: 5px;
+            background-color: rgb(54, 134, 255);
+            .tagdva:nth-last-child(1) {
+                border: 1px solid rgb(54, 255, 211);
+                background-color: rgb(54, 255, 211);
+            }
+        }
+        .info {
+            width: 80%;
+            margin: 20px 0 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                text-decoration: none;
+            }
+        }
+        .heading {
+            width: 80%;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .description {
+            width: 80%;
+            font-size: 16px;
+            color: grey;
+            margin-bottom: 5rem;
+        }
+    }
+}

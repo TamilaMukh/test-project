@@ -141,6 +141,70 @@ $(document).ready(function() {
         $('.addBlock .singleBlock-' + index + ' small').append(value.date);
         $('.addBlock .singleBlock-' + index + ' .meta').append("<div>" + "<p>Meta Score:</p>" + "<span>" + value.meta_s + "</span>" + "</div>");
         $('.addBlock .singleBlock-' + index + ' .user').append("<div>" + "<p>User Score:</p>" + "<span>" + value.user_s + "</span>" + "</div>");
-
-    });    
+    });  
+    
+    var skillbox = [
+        {
+            "image": "https://248006.selcdn.ru/main/iblock/97a/97a7a22f93c5595fdbf58673b51e7db4/a1a6b1645ba28478f78e7cd00023c58b.png",
+            "tag": "БИЗНЕС",
+            "rubric": "#ИНТЕРВЬЮ",
+            "day": "18 мар 2022",
+            "heading": "Инженер с птицефабрики создал робота с голосом мёртвого деда. Мы узнали у него, как и зачем",
+            "description": "«Терминатор» из России не планирует захватывать мир. Вместо этого он рассуждает о жизни и смерти."
+        },
+        {
+            "image": "https://248006.selcdn.ru/main/iblock/260/2608818df7cab151c94ae075fb4273e0/ccbd890af3b83134dec320241fdcc8a5.png",
+            "tag": "ДИЗАЙН",
+            "rubric": "#РУКОВОДСТВА",
+            "day": "18 мар 2022",
+            "heading": "Figma Mirror: что это и зачем нужно",
+            "description": "Рассказываем, как самостоятельно проверить макет прямо в телефоне, не привлекая к этому программистов."
+        },
+        {
+            "image": "https://248006.selcdn.ru/main/iblock/309/309568175b6ddc788c264b7807f081c2/50a9550a07390af3f3643e95144d360d.jpg",
+            "tag": "УПРАВЛЕНИЕ",
+            "rubric": "#СТАТЬИ",
+            "day": "18 мар 2022",
+            "heading": "60% новаций в компаниях проваливаются. Что такое управление изменениями и как оно поможет",
+            "description": "Подробный гайд для менеджеров. Кто должен внедрять изменения в компании, как уже на старте оценить шансы на успех и какие методики использовать."
+        },
+        {
+            "image": "https://248006.selcdn.ru/main/iblock/2e2/2e253970fc8d3cdac343319a3cd04b86/bf735c37e122d6c7eb95effb333b9966.png",
+            "tag": "КОД",
+            "rubric": "#СТАТЬИ",
+            "day": "18 мар 2022",
+            "heading": "Как уехать за границу в 2022 году: подробный гайд по релокейту для айтишников",
+            "description": "Поговорили с создателем чата «Релокейти» о том, какие страны открыты для россиян, как организовать переезд и есть ли шанс найти работу за границей."
+        },
+        {
+            "image": "https://248006.selcdn.ru/main/iblock/ba6/ba6c83d37fb0d2f9a2f042163bfe954d/77b7fe0cd527f87193512f276b888a49.png",
+            "tag": "ДИЗАЙН",
+            "rubric": "#СТАТЬИ",
+            "day": "18 мар 2022",
+            "heading": "Фирменный стиль: зачем он нужен и что в него входит",
+            "description": "Рассказываем, как набор элементов дизайна формирует идентичность бренда."
+        },
+        {
+            "image": "https://248006.selcdn.ru/main/iblock/f19/f19863cfcff827b1d53d335660ed47a5/9b588223dd2319d5eb28dd13590d23d4.jpg",
+            "tag": "МАРКЕТИНГ",
+            "rubric": "#ИСТОРИИ",
+            "day": "18 мар 2022",
+            "heading": "«Чувство ответственности я приобрёл, работая в больнице. Но оно помогает мне в маркетинге»",
+            "description": "Андрей работал медбратом, спасал жизни во время эпидемии коронавируса. Захотев спокойствия, он вернулся к тому, что влекло его с детства, — к рекламе."
+        }
+    ];
+    $.each(skillbox, function (index, value) {
+        $('.skillbox').append("<div class='twain twainBox-" + index + "'>" + 
+        "<img>" + "<p class='tag tagdva'></p>" +
+        "<div class='info'>" + "<div class='melkiytext-one'>" + "<a href='#' class='rubrica'></a>" + "</div>" + 
+        "<div class='melkiytext-two'>" + "<small></small>" + "</div>" + "</div>" + 
+        "<p class='heading'></p>" + "<p class='description'></p>" +
+         "</div>");
+        $('.skillbox .twainBox-' + index + ' img').attr('src', value.image);
+        $('.skillbox .twainBox-' + index + ' .tag').append(value.tag);
+        $('.skillbox .twainBox-' + index + ' .rubrica').append(value.rubric);
+        $('.skillbox .twainBox-' + index + ' small').append(value.day);
+        $('.skillbox .twainBox-' + index + ' .heading').append(value.heading);
+        $('.skillbox .twainBox-' + index + ' .description').append(value.description);
+    }); 
 });
